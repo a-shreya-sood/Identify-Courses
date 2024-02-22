@@ -1,0 +1,47 @@
+20:29:57.492 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Entering the instituteType--------
+20:29:58.025 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Entering the jobType--------
+20:55:16.366 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Entering data into text feild--------
+20:55:24.383 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Scrolling till language type--------
+20:55:28.046 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Scrolling till course level--------
+20:55:31.645 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Capturing all data of course first box--------
+20:55:39.930 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Capturing all data of course second box--------
+20:55:46.819 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Entering data into input box--------
+20:55:47.782 [main] INFO  TestCases.Tc_001_HolidayHomeTest - --------Scrolling till the language icon-------
+20:56:17.983 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Scrolling till show more--------
+20:56:48.189 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Capturing all the languages--------
+20:56:53.191 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Capturing all the levels--------
+20:56:54.102 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Scrolling till coursera button--------
+20:56:59.725 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Scrolling till enterprise button--------
+20:57:12.639 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Clicking on university button--------
+20:57:17.590 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Entering the firstName--------
+20:57:18.496 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Entering the instituteType--------
+20:57:18.876 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Entering the jobType--------
+21:12:34.675 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Entering data into text feild--------
+21:12:41.756 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Scrolling till language type--------
+21:12:46.132 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Scrolling till course level--------
+21:12:49.802 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Capturing all data of course first box--------
+21:12:57.508 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Capturing all data of course second box--------
+21:13:05.672 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Entering data into input box--------
+21:13:06.907 [main] INFO  TestCases.Tc_001_HolidayHomeTest - --------Scrolling till the language icon-------
+21:13:37.136 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Scrolling till show more--------
+21:14:07.362 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Capturing all the languages--------
+21:14:12.105 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Capturing all the levels--------
+21:14:12.655 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Scrolling till coursera button--------
+21:14:20.686 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Scrolling till enterprise button--------
+21:14:34.021 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Clicking on university button--------
+21:14:39.496 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Entering the firstName--------
+21:14:40.769 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Entering the instituteType--------
+21:14:41.117 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Entering the jobType--------
+21:46:16.666 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Entering data into text feild--------
+21:46:25.600 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Scrolling till language type--------
+21:46:29.340 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Scrolling till course level--------
+21:46:33.158 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Capturing all data of course first box--------
+21:46:44.551 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Capturing all data of course second box--------
+21:46:51.588 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Entering data into input box--------
+21:46:53.026 [main] INFO  TestCases.Tc_001_HolidayHomeTest - --------Scrolling till the language icon-------
+21:47:23.261 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Scrolling till show more--------
+21:47:53.481 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Capturing all the languages--------
+21:47:58.550 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Capturing all the levels--------
+21:47:59.719 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Scrolling till coursera button--------
+21:48:05.344 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Scrolling till enterprise button--------
+21:48:22.751 [main] INFO  TestCases.Tc_001_HolidayHomeTest - -------Clicking on university button--------

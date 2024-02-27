@@ -16,7 +16,7 @@ public class Tc_001_HolidayHomeTest extends BaseClass
   @Test(priority=1)
   public void verify_text_box() throws InterruptedException
   {
-	  logger.info("-------Entering data into text feild--------");
+	  BaseClass.getLogger().info("-------Entering data into text feild--------");
 	  
 	  hp=new HomePage(driver);
 	  hp.text_box();
@@ -26,7 +26,7 @@ public class Tc_001_HolidayHomeTest extends BaseClass
   @Test(priority=2)
 	public void verify_language() throws InterruptedException
 	{
-	  logger.info("-------Scrolling till language type--------");	  
+	  BaseClass.getLogger().info("-------Scrolling till language type--------");	  
 		  hp=new HomePage(driver);
 		  hp.language();
 	}
@@ -35,7 +35,7 @@ public class Tc_001_HolidayHomeTest extends BaseClass
   @Test(priority=3)
   public void verify_course_level() throws InterruptedException
   {
-	  logger.info("-------Scrolling till course level--------");	
+	  BaseClass.getLogger().info("-------Scrolling till course level--------");	
 	  hp=new HomePage(driver);
        	  hp.course_level();
        	  Thread.sleep(3000);
@@ -43,7 +43,7 @@ public class Tc_001_HolidayHomeTest extends BaseClass
   @Test(priority=4)
 	  public void verify_course_box()
 	  {
-	  logger.info("-------Capturing all data of course first box--------");	
+	  BaseClass.getLogger().info("-------Capturing all data of course first box--------");	
 	    hp=new HomePage(driver);
 	    hp.course_box_first();
 	    hp.childPage(driver);
@@ -74,7 +74,7 @@ public class Tc_001_HolidayHomeTest extends BaseClass
   @Test(priority=5)
   public void verify_second_course_box()
   {
-	 logger.info("-------Capturing all data of course second box--------");	
+	  BaseClass.getLogger().info("-------Capturing all data of course second box--------");	
 	  hp=new HomePage(driver);
 	  
 	  	hp.second_course_box();

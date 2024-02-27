@@ -14,7 +14,7 @@ public class Tc_003_EnterpriseTest extends BaseClass
 	@Test(priority=10)
 	public void verify_coursera_button()
 	{
-		 logger.info("-------Scrolling till coursera button--------");	
+		BaseClass.getLogger().info("-------Scrolling till coursera button--------");	
 		 et=new EnterpriseTest(driver);
 		et.coursera_button();
 	}
@@ -22,7 +22,7 @@ public class Tc_003_EnterpriseTest extends BaseClass
 	@Test(priority=11)
 	public void verify_enterprise_button()
 	{
-	  logger.info("-------Scrolling till enterprise button--------");	
+		BaseClass.getLogger().info("-------Scrolling till enterprise button--------");	
 		et=new EnterpriseTest(driver);
 		et.enterprise_button();
 	}
@@ -30,7 +30,7 @@ public class Tc_003_EnterpriseTest extends BaseClass
 	@Test(priority=12)
 	public void verify_whatWeOffer_button()
 	{
-		//logger.info("-------Clicking on solution button--------");	
+		BaseClass.getLogger().info("-------Clicking on solution button--------");	
 		et=new EnterpriseTest(driver);
 		et.whatWeOffer_button();
 	}
@@ -39,7 +39,7 @@ public class Tc_003_EnterpriseTest extends BaseClass
 	@Test(priority=13)
 	public void verify_learnMore_button()
 	{
-		logger.info("-------Clicking on university button--------");	
+		BaseClass.getLogger().info("-------Clicking on university button--------");	
 		et=new EnterpriseTest(driver);
 		et.learnMore_button();
 	}
@@ -48,7 +48,7 @@ public class Tc_003_EnterpriseTest extends BaseClass
 	@Test(priority=14)
 	public void verify_Form()
 	{
-		//logger.info("-------Scrolling till the form --------");
+		BaseClass.getLogger().info("-------Scrolling till the form --------");
 		 et=new EnterpriseTest(driver);
 		et.Form();
 	}
@@ -57,7 +57,7 @@ public class Tc_003_EnterpriseTest extends BaseClass
 	@Test(priority=15)
 	public void verify_first_name()
 	{
-		logger.info("-------Entering the firstName--------");
+		BaseClass.getLogger().info("-------Entering the firstName--------");
 		 et=new EnterpriseTest(driver);
 		et.name();
 	}
@@ -66,7 +66,7 @@ public class Tc_003_EnterpriseTest extends BaseClass
 	@Test(priority=16)
 	public void verify_mail_phone()
 	{
-		//logger.info("-------Entering the lastName--------");
+		BaseClass.getLogger().info("-------Entering the lastName--------");
 		 et=new EnterpriseTest(driver);
 		et.mail_phone();
 		
@@ -76,24 +76,24 @@ public class Tc_003_EnterpriseTest extends BaseClass
 	@Test(priority=17)
 	public void verify_institute_type()
 	{
-		logger.info("-------Entering the instituteType--------");
+		BaseClass.getLogger().info("-------Entering the instituteType--------");
 		 et=new EnterpriseTest(driver);
 		et.institute_type();
 	}
 	
-//	@Test(priority=18)
-//	public void verify_institute_name()
-//	{
-//		//logger.info("-------Entering the instituteName--------");
-//		 et=new EnterpriseTest(driver);
-//		et.institute_name();
-//	}
+	@Test(priority=18)
+	public void verify_institute_name()
+	{
+		//logger.info("-------Entering the instituteName--------");
+		 et=new EnterpriseTest(driver);
+		et.institute_name();
+}
 	
 	
 	@Test(priority=19)
 	public void verify_job_search()
 	{
-		logger.info("-------Entering the jobType--------");
+		BaseClass.getLogger().info("-------Entering the jobType--------");
 		EnterpriseTest et=new EnterpriseTest(driver);
 		et.job_search();
 	}

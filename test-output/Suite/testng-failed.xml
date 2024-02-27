@@ -4,16 +4,104 @@
   <listeners>
     <listener class-name="Utilities.ExtentReportManager"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Chrome Test(failed)">
+    <parameter name="os" value="windows"/>
     <parameter name="browser" value="Chrome"/>
     <classes>
+      <class name="TestCases.Tc_002_LeaninglanguageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verify_show_more"/>
+          <include name="verify_language"/>
+          <include name="verify_all_language"/>
+          <include name="verify_all_levels"/>
+          <include name="verify_input_box"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.Tc_002_LeaninglanguageTest -->
+      <class name="TestCases.Tc_001_HolidayHomeTest">
+        <methods>
+          <include name="verify_second_course_box"/>
+          <include name="verify_language"/>
+          <include name="verify_text_box"/>
+          <include name="setUp"/>
+          <include name="verify_course_box"/>
+          <include name="verify_course_level"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.Tc_001_HolidayHomeTest -->
       <class name="TestCases.Tc_003_EnterpriseTest">
         <methods>
           <include name="verify_department"/>
+          <include name="verify_Country"/>
           <include name="setUp"/>
+          <include name="verify_enterprise_button"/>
+          <include name="verify_Submit"/>
+          <include name="verify_institute_name"/>
+          <include name="verify_Form"/>
+          <include name="verify_learnMore_button"/>
+          <include name="verify_describe"/>
+          <include name="verify_first_name"/>
+          <include name="verify_whatWeOffer_button"/>
+          <include name="verify_coursera_button"/>
+          <include name="verify_job_search"/>
+          <include name="verify_institute_type"/>
+          <include name="verify_error_msg"/>
+          <include name="verify_mail_phone"/>
+          <include name="verify_State"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- TestCases.Tc_003_EnterpriseTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Chrome Test(failed) -->
+  <test thread-count="5" name="Edge Test(failed)">
+    <parameter name="os" value="windows"/>
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="TestCases.Tc_002_LeaninglanguageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verify_show_more"/>
+          <include name="verify_language"/>
+          <include name="verify_all_language"/>
+          <include name="verify_all_levels"/>
+          <include name="verify_input_box"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.Tc_002_LeaninglanguageTest -->
+      <class name="TestCases.Tc_001_HolidayHomeTest">
+        <methods>
+          <include name="verify_second_course_box"/>
+          <include name="verify_language"/>
+          <include name="verify_text_box"/>
+          <include name="setUp"/>
+          <include name="verify_course_box"/>
+          <include name="verify_course_level"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.Tc_001_HolidayHomeTest -->
+      <class name="TestCases.Tc_003_EnterpriseTest">
+        <methods>
+          <include name="verify_department"/>
+          <include name="verify_Country"/>
+          <include name="setUp"/>
+          <include name="verify_enterprise_button"/>
+          <include name="verify_Submit"/>
+          <include name="verify_institute_name"/>
+          <include name="verify_Form"/>
+          <include name="verify_learnMore_button"/>
+          <include name="verify_describe"/>
+          <include name="verify_first_name"/>
+          <include name="verify_whatWeOffer_button"/>
+          <include name="verify_coursera_button"/>
+          <include name="verify_job_search"/>
+          <include name="verify_institute_type"/>
+          <include name="verify_error_msg"/>
+          <include name="verify_mail_phone"/>
+          <include name="verify_State"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.Tc_003_EnterpriseTest -->
+    </classes>
+  </test> <!-- Edge Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

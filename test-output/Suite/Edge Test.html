@@ -1,0 +1,209 @@
+<html>
+<head>
+<title>TestNG:  Edge Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Edge Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>26/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Feb 27 14:08:25 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>146 seconds (146183 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.Tc_003_EnterpriseTest.verify_whatWeOffer_button()'><b>verify_whatWeOffer_button</b><br>Test class: TestCases.Tc_003_EnterpriseTest</td>
+<td></td>
+<td>5</td>
+<td>TestCases.Tc_003_EnterpriseTest@78e4deb0</td></tr>
+<tr>
+<td title='TestCases.Tc_001_HolidayHomeTest.verify_second_course_box()'><b>verify_second_course_box</b><br>Test class: TestCases.Tc_001_HolidayHomeTest</td>
+<td></td>
+<td>16</td>
+<td>TestCases.Tc_001_HolidayHomeTest@1530c739</td></tr>
+<tr>
+<td title='TestCases.Tc_003_EnterpriseTest.verify_Country()'><b>verify_Country</b><br>Test class: TestCases.Tc_003_EnterpriseTest</td>
+<td></td>
+<td>0</td>
+<td>TestCases.Tc_003_EnterpriseTest@78e4deb0</td></tr>
+<tr>
+<td title='TestCases.Tc_003_EnterpriseTest.verify_job_search()'><b>verify_job_search</b><br>Test class: TestCases.Tc_003_EnterpriseTest</td>
+<td></td>
+<td>0</td>
+<td>TestCases.Tc_003_EnterpriseTest@78e4deb0</td></tr>
+<tr>
+<td title='TestCases.Tc_002_LeaninglanguageTest.verify_all_language()'><b>verify_all_language</b><br>Test class: TestCases.Tc_002_LeaninglanguageTest</td>
+<td></td>
+<td>20</td>
+<td>TestCases.Tc_002_LeaninglanguageTest@5b1669c0</td></tr>
+<tr>
+<td title='TestCases.Tc_003_EnterpriseTest.verify_department()'><b>verify_department</b><br>Test class: TestCases.Tc_003_EnterpriseTest</td>
+<td></td>
+<td>0</td>
+<td>TestCases.Tc_003_EnterpriseTest@78e4deb0</td></tr>
+<tr>
+<td title='TestCases.Tc_003_EnterpriseTest.verify_mail_phone()'><b>verify_mail_phone</b><br>Test class: TestCases.Tc_003_EnterpriseTest</td>
+<td></td>
+<td>0</td>
+<td>TestCases.Tc_003_EnterpriseTest@78e4deb0</td></tr>
+<tr>
+<td title='TestCases.Tc_001_HolidayHomeTest.verify_course_box()'><b>verify_course_box</b><br>Test class: TestCases.Tc_001_HolidayHomeTest</td>
+<td></td>
+<td>15</td>
+<td>TestCases.Tc_001_HolidayHomeTest@1530c739</td></tr>
+<tr>
+<td title='TestCases.Tc_003_EnterpriseTest.verify_institute_name()'><b>verify_institute_name</b><br>Test class: TestCases.Tc_003_EnterpriseTest</td>
+<td></td>
+<td>0</td>
+<td>TestCases.Tc_003_EnterpriseTest@78e4deb0</td></tr>
+<tr>
+<td title='TestCases.Tc_003_EnterpriseTest.verify_coursera_button()'><b>verify_coursera_button</b><br>Test class: TestCases.Tc_003_EnterpriseTest</td>
+<td></td>
+<td>11</td>
+<td>TestCases.Tc_003_EnterpriseTest@78e4deb0</td></tr>
+<tr>
+<td title='TestCases.Tc_003_EnterpriseTest.verify_describe()'><b>verify_describe</b><br>Test class: TestCases.Tc_003_EnterpriseTest</td>
+<td></td>
+<td>0</td>
+<td>TestCases.Tc_003_EnterpriseTest@78e4deb0</td></tr>
+<tr>
+<td title='TestCases.Tc_003_EnterpriseTest.verify_institute_type()'><b>verify_institute_type</b><br>Test class: TestCases.Tc_003_EnterpriseTest</td>
+<td></td>
+<td>0</td>
+<td>TestCases.Tc_003_EnterpriseTest@78e4deb0</td></tr>
+<tr>
+<td title='TestCases.Tc_001_HolidayHomeTest.verify_text_box()'><b>verify_text_box</b><br>Test class: TestCases.Tc_001_HolidayHomeTest</td>
+<td></td>
+<td>9</td>
+<td>TestCases.Tc_001_HolidayHomeTest@1530c739</td></tr>
+<tr>
+<td title='TestCases.Tc_003_EnterpriseTest.verify_error_msg()'><b>verify_error_msg</b><br>Test class: TestCases.Tc_003_EnterpriseTest</td>
+<td></td>
+<td>0</td>
+<td>TestCases.Tc_003_EnterpriseTest@78e4deb0</td></tr>
+<tr>
+<td title='TestCases.Tc_003_EnterpriseTest.verify_learnMore_button()'><b>verify_learnMore_button</b><br>Test class: TestCases.Tc_003_EnterpriseTest</td>
+<td></td>
+<td>7</td>
+<td>TestCases.Tc_003_EnterpriseTest@78e4deb0</td></tr>
+<tr>
+<td title='TestCases.Tc_001_HolidayHomeTest.verify_course_level()'><b>verify_course_level</b><br>Test class: TestCases.Tc_001_HolidayHomeTest</td>
+<td></td>
+<td>3</td>
+<td>TestCases.Tc_001_HolidayHomeTest@1530c739</td></tr>
+<tr>
+<td title='TestCases.Tc_002_LeaninglanguageTest.verify_language()'><b>verify_language</b><br>Test class: TestCases.Tc_002_LeaninglanguageTest</td>
+<td></td>
+<td>1</td>
+<td>TestCases.Tc_002_LeaninglanguageTest@5b1669c0</td></tr>
+<tr>
+<td title='TestCases.Tc_001_HolidayHomeTest.verify_language()'><b>verify_language</b><br>Test class: TestCases.Tc_001_HolidayHomeTest</td>
+<td></td>
+<td>3</td>
+<td>TestCases.Tc_001_HolidayHomeTest@1530c739</td></tr>
+<tr>
+<td title='TestCases.Tc_003_EnterpriseTest.verify_Submit()'><b>verify_Submit</b><br>Test class: TestCases.Tc_003_EnterpriseTest</td>
+<td></td>
+<td>0</td>
+<td>TestCases.Tc_003_EnterpriseTest@78e4deb0</td></tr>
+<tr>
+<td title='TestCases.Tc_002_LeaninglanguageTest.verify_input_box()'><b>verify_input_box</b><br>Test class: TestCases.Tc_002_LeaninglanguageTest</td>
+<td></td>
+<td>2</td>
+<td>TestCases.Tc_002_LeaninglanguageTest@5b1669c0</td></tr>
+<tr>
+<td title='TestCases.Tc_003_EnterpriseTest.verify_enterprise_button()'><b>verify_enterprise_button</b><br>Test class: TestCases.Tc_003_EnterpriseTest</td>
+<td></td>
+<td>11</td>
+<td>TestCases.Tc_003_EnterpriseTest@78e4deb0</td></tr>
+<tr>
+<td title='TestCases.Tc_002_LeaninglanguageTest.verify_all_levels()'><b>verify_all_levels</b><br>Test class: TestCases.Tc_002_LeaninglanguageTest</td>
+<td></td>
+<td>0</td>
+<td>TestCases.Tc_002_LeaninglanguageTest@5b1669c0</td></tr>
+<tr>
+<td title='TestCases.Tc_002_LeaninglanguageTest.verify_show_more()'><b>verify_show_more</b><br>Test class: TestCases.Tc_002_LeaninglanguageTest</td>
+<td></td>
+<td>0</td>
+<td>TestCases.Tc_002_LeaninglanguageTest@5b1669c0</td></tr>
+<tr>
+<td title='TestCases.Tc_003_EnterpriseTest.verify_first_name()'><b>verify_first_name</b><br>Test class: TestCases.Tc_003_EnterpriseTest</td>
+<td></td>
+<td>0</td>
+<td>TestCases.Tc_003_EnterpriseTest@78e4deb0</td></tr>
+<tr>
+<td title='TestCases.Tc_003_EnterpriseTest.verify_State()'><b>verify_State</b><br>Test class: TestCases.Tc_003_EnterpriseTest</td>
+<td></td>
+<td>0</td>
+<td>TestCases.Tc_003_EnterpriseTest@78e4deb0</td></tr>
+<tr>
+<td title='TestCases.Tc_003_EnterpriseTest.verify_Form()'><b>verify_Form</b><br>Test class: TestCases.Tc_003_EnterpriseTest</td>
+<td></td>
+<td>0</td>
+<td>TestCases.Tc_003_EnterpriseTest@78e4deb0</td></tr>
+</table><p>
+</body>
+</html>

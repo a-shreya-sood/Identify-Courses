@@ -19,7 +19,8 @@ import Utilities.excelUtility;
 public class LanguageLearningpage extends BasePage
 {
 	 Actions act;
-	 WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(60));
+	 WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(80));
+	 JavascriptExecutor js=(JavascriptExecutor)driver;
 	 
 	public LanguageLearningpage(WebDriver driver) 
 	{
@@ -80,8 +81,9 @@ public class LanguageLearningpage extends BasePage
 	{
 		try
 		{
-		JavascriptExecutor js=(JavascriptExecutor)driver;
-		js.executeAsyncScript("arguments[0].scrollIntoView();",lang);
+		wait.until(ExpectedConditions.visibilityOfAllElements(lang));
+		act.moveToElement(lang).perform();
+		//js.executeAsyncScript("arguments[0].scrollIntoView();",lang);
 //		Thread.sleep(3000);
 		}
 		catch(Exception e)
@@ -95,10 +97,9 @@ public class LanguageLearningpage extends BasePage
 	{
 		try
 		{
-		JavascriptExecutor js=(JavascriptExecutor)driver;
-		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(60));
 		wait.until(ExpectedConditions.visibilityOfAllElements(showMore));
-		js.executeAsyncScript("arguments[0].click();",showMore);
+		act.moveToElement(showMore).click().perform();
+		//js.executeAsyncScript("arguments[0].click();",showMore);
 		}
 		 catch(Exception e)
 		{

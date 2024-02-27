@@ -6,6 +6,7 @@
 </listeners>
   <test thread-count="5" name="Test">
   <parameter name="browser" value="Chrome"></parameter>
+   <parameter name="os" value="windows"></parameter>
     <classes>
      <class name="TestCases.Tc_001_HolidayHomeTest"/>
      <class name="TestCases.Tc_002_LeaninglanguageTest"/>

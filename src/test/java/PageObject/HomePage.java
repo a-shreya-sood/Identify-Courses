@@ -98,7 +98,7 @@ public class HomePage extends BasePage
 		try
 		{
 		JavascriptExecutor js=(JavascriptExecutor)driver;
-	js.executeScript("arguments[0].scrollIntoView();",lang);
+	     js.executeScript("arguments[0].scrollIntoView();",lang);
 		js.executeScript("arguments[0].click();",lang);
 		Thread.sleep(3000);
 		}

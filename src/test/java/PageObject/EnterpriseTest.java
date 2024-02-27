@@ -17,6 +17,7 @@ public class EnterpriseTest extends BasePage
 {
 	JavascriptExecutor js=(JavascriptExecutor)driver;
 	Select s;
+	String[] data=excelUtility.read();
 	
 	public EnterpriseTest(WebDriver driver)
 	{
@@ -81,7 +82,8 @@ public class EnterpriseTest extends BasePage
 	
 	
 	//xpath for instituion name
-	@FindBy(id="Company")
+	//@FindBy(id="Company")
+	@FindBy(xpath="//input[@placeholder=\"Institution Name\"]")
 	WebElement institueName;
 	
 	//xpath fo job search
@@ -115,8 +117,7 @@ public class EnterpriseTest extends BasePage
 	//xpath of error message
 	@FindBy(id="ValidMsgEmail")
 	WebElement errorMsg;
-	
-	String[] data=excelUtility.read();
+
 	
 	//action for coursera
 	public void coursera_button()

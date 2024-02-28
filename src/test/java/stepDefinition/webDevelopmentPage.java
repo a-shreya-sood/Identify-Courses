@@ -11,9 +11,9 @@ import io.cucumber.java.en.*;
 public class webDevelopmentPage
 {
 	BaseClass bc;
-	 Tc_001_HolidayHomeTest tc1=new Tc_001_HolidayHomeTest();
-	 Tc_002_LeaninglanguageTest tc2=new Tc_002_LeaninglanguageTest();
-	 Tc_003_EnterpriseTest tc3=new Tc_003_EnterpriseTest();
+	 Tc_001_HolidayHomeTest tc1;
+	 Tc_002_LeaninglanguageTest tc2;
+	 Tc_003_EnterpriseTest tc3;
 
 	@Given("user is navigating to coursera site")
 	public void user_is_navigating_to_coursera_site() throws IOException

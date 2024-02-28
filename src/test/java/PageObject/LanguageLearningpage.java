@@ -42,7 +42,7 @@ public class LanguageLearningpage extends BasePage
 	
 	
 	//xpath  of all languages
-	@FindBy(xpath="//div[@class=\"css-1vfysn6\"]//label//div")
+	@FindBy(xpath="//div[@id=\"checkbox-group\"]/div")
 	List<WebElement> allLanguages;
 	
 	

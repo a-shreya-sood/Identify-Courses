@@ -29,8 +29,7 @@ public class BaseClass
 	static Logger logger; 
 	public static Properties p;
 	
-       @SuppressWarnings("deprecation")
-		@BeforeTest
+       @BeforeTest
 		@Parameters({"os","browser"})
 		public void setUp(String os,String br) throws IOException
 		{

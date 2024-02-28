@@ -19,6 +19,8 @@ public class Hooks
 	}
 	
 	@AfterStep
+	
+	
 	public void addScreenshot(Scenario scenario)
 	{
 		if(scenario.isFailed())

@@ -1,50 +1,27 @@
-13:52:11.403 [main] INFO  TestBase.BaseClass - -------Entering data into text feild--------
-13:52:45.659 [main] INFO  TestBase.BaseClass - -------Scrolling till language type--------
-13:52:49.476 [main] INFO  TestBase.BaseClass - -------Scrolling till course level--------
-13:52:53.301 [main] INFO  TestBase.BaseClass - -------Capturing all data of course first box--------
-13:53:31.644 [main] INFO  TestBase.BaseClass - -------Capturing all data of course second box--------
-13:54:07.838 [main] INFO  TestBase.BaseClass - -------Entering data into input box--------
-13:54:09.489 [main] INFO  TestBase.BaseClass - --------Scrolling till the language icon-------
-13:54:10.882 [main] INFO  TestBase.BaseClass - -------Scrolling till show more--------
-13:54:11.606 [main] INFO  TestBase.BaseClass - -------Capturing all the languages--------
-13:54:16.323 [main] INFO  TestBase.BaseClass - -------Capturing all the levels--------
-13:54:16.787 [main] INFO  TestBase.BaseClass - -------Scrolling till coursera button--------
-13:54:50.659 [main] INFO  TestBase.BaseClass - -------Scrolling till enterprise button--------
-13:55:28.382 [main] INFO  TestBase.BaseClass - -------Clicking on solution button--------
-13:56:07.471 [main] INFO  TestBase.BaseClass - -------Clicking on university button--------
-13:56:42.043 [main] INFO  TestBase.BaseClass - -------Scrolling till the form --------
-13:56:42.389 [main] INFO  TestBase.BaseClass - -------Entering the firstName--------
-13:56:42.827 [main] INFO  TestBase.BaseClass - -------Entering the lastName--------
-13:56:43.233 [main] INFO  TestBase.BaseClass - -------Entering the instituteType--------
-13:56:43.964 [main] INFO  TestBase.BaseClass - -------Entering the jobType--------
-14:00:46.223 [main] INFO  TestBase.BaseClass - ---------Opening of the Coursera Site-------
-14:01:03.465 [main] INFO  TestBase.BaseClass - ---------Sending value into the textbox--------
-14:01:03.467 [main] INFO  TestBase.BaseClass - -------Entering data into text feild--------
-14:01:39.197 [main] INFO  TestBase.BaseClass - ----------Capturing the language and course level details-------
-14:01:39.198 [main] INFO  TestBase.BaseClass - -------Scrolling till language type--------
-14:01:42.684 [main] INFO  TestBase.BaseClass - -------Scrolling till course level--------
-14:01:46.536 [main] INFO  TestBase.BaseClass - ---------Capturing course 1 and course 2 details--------
-14:01:46.537 [main] INFO  TestBase.BaseClass - -------Capturing all data of course first box--------
-14:02:23.325 [main] INFO  TestBase.BaseClass - -------Capturing all data of course second box--------
-14:03:09.244 [main] INFO  TestBase.BaseClass - ---------Entering value into text box--------
-14:03:09.245 [main] INFO  TestBase.BaseClass - -------Entering data into input box--------
-14:03:10.231 [main] INFO  TestBase.BaseClass - ---------Capturing all the languages and closing the dialog box--------
-14:03:10.231 [main] INFO  TestBase.BaseClass - --------Scrolling till the language icon-------
-14:03:10.556 [main] INFO  TestBase.BaseClass - -------Scrolling till show more--------
-14:03:10.880 [main] INFO  TestBase.BaseClass - -------Capturing all the languages--------
-14:03:15.580 [main] INFO  TestBase.BaseClass - ------------Capturing all the levels---------
-14:03:15.580 [main] INFO  TestBase.BaseClass - -------Capturing all the levels--------
-14:03:16.170 [main] INFO  TestBase.BaseClass - ---------Navigating back to cousera site---------
-14:03:16.171 [main] INFO  TestBase.BaseClass - -------Scrolling till coursera button--------
-14:03:51.610 [main] INFO  TestBase.BaseClass - ---------Clicking on enterprise and what we offer icon--------
-14:03:51.610 [main] INFO  TestBase.BaseClass - -------Scrolling till enterprise button--------
-14:04:27.017 [main] INFO  TestBase.BaseClass - -------Clicking on solution button--------
-14:05:00.881 [main] INFO  TestBase.BaseClass - ---------Scrolling till learn more and click on it--------
-14:05:00.881 [main] INFO  TestBase.BaseClass - -------Clicking on university button--------
-14:05:36.888 [main] INFO  TestBase.BaseClass - ---------Entering the details into the form--------
-14:05:36.888 [main] INFO  TestBase.BaseClass - -------Scrolling till the form --------
-14:05:36.951 [main] INFO  TestBase.BaseClass - -------Entering the firstName--------
-14:05:37.481 [main] INFO  TestBase.BaseClass - -------Entering the lastName--------
-14:05:37.980 [main] INFO  TestBase.BaseClass - -------Entering the instituteType--------
-14:05:38.540 [main] INFO  TestBase.BaseClass - -------Entering the jobType--------
-14:05:39.957 [main] INFO  TestBase.BaseClass - ---------Capturing the error message--------
+20:57:54.825 [main] INFO  TestBase.BaseClass - -------Scrolling till language type--------
+20:57:58.823 [main] INFO  TestBase.BaseClass - -------Scrolling till course level--------
+20:58:03.074 [main] INFO  TestBase.BaseClass - ---------Capturing course 1 and course 2 details--------
+20:58:03.075 [main] INFO  TestBase.BaseClass - -------Capturing all data of course first box--------
+20:58:12.560 [main] INFO  TestBase.BaseClass - -------Capturing all data of course second box--------
+20:58:20.633 [main] INFO  TestBase.BaseClass - ---------Entering value into text box--------
+20:58:20.636 [main] INFO  TestBase.BaseClass - -------Entering data into input box--------
+20:58:21.947 [main] INFO  TestBase.BaseClass - ---------Capturing all the languages and closing the dialog box--------
+20:58:21.947 [main] INFO  TestBase.BaseClass - --------Scrolling till the language icon-------
+20:58:22.681 [main] INFO  TestBase.BaseClass - -------Scrolling till show more--------
+20:58:23.080 [main] INFO  TestBase.BaseClass - -------Capturing all the languages--------
+20:58:29.063 [main] INFO  TestBase.BaseClass - ------------Capturing all the levels---------
+20:58:29.063 [main] INFO  TestBase.BaseClass - -------Capturing all the levels--------
+20:58:29.704 [main] INFO  TestBase.BaseClass - ---------Navigating back to cousera site---------
+20:58:29.706 [main] INFO  TestBase.BaseClass - -------Scrolling till coursera button--------
+20:58:35.381 [main] INFO  TestBase.BaseClass - ---------Clicking on enterprise and what we offer icon--------
+20:58:35.381 [main] INFO  TestBase.BaseClass - -------Scrolling till enterprise button--------
+20:58:42.748 [main] INFO  TestBase.BaseClass - -------Clicking on solution button--------
+20:58:48.021 [main] INFO  TestBase.BaseClass - ---------Scrolling till learn more and click on it--------
+20:58:48.021 [main] INFO  TestBase.BaseClass - -------Clicking on university button--------
+20:58:53.008 [main] INFO  TestBase.BaseClass - ---------Entering the details into the form--------
+20:58:53.008 [main] INFO  TestBase.BaseClass - -------Scrolling till the form --------
+20:58:53.208 [main] INFO  TestBase.BaseClass - -------Entering the firstName--------
+20:58:53.754 [main] INFO  TestBase.BaseClass - -------Entering the lastName--------
+20:58:54.084 [main] INFO  TestBase.BaseClass - -------Entering the instituteType--------
+20:58:54.469 [main] INFO  TestBase.BaseClass - -------Entering the jobType--------
+20:58:56.055 [main] INFO  TestBase.BaseClass - ---------Capturing the error message--------

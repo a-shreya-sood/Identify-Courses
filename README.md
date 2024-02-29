@@ -1,15 +1,15 @@
-# Identify-Courses #
+# Identify-Courses 
 [github link](https://github.com/a-shreya-sood/Identify-Courses.git)
-## Problem Statement : Identify Courses ###
+## Problem Statement : Identify Courses 
 
-### Detailed Description: Hackath Ideas ###
+### Detailed Description: Hackath Ideas 
 
 1. Search for web development courses for Beginners level & English Language and extract the course names, total learning hours & rating for first 2 courses
 2. Look for Language Learning; Extract all the languages and different levels with its total count & display them
 3. In Home page, go to "For Enterprise"; Look into Courses for Campus under Product; Fill the  "Ready to transform" form with any one input invalid (example: email); Capture the error message & display
 
    
-### Key Automation Scope ###
+### Key Automation Scope 
 
 * Handling different browser windows, search option
 * Extract multiple drop down list items & store in collections
@@ -19,10 +19,10 @@
 * Scrolling down in web page
 
 
-###  Data source :  ###
+###  Data source :  
 https://www.coursera.org/
 
-### Technology used: ###
+### Technology used: 
 * Java(Maven project)
 * Selenium 4.17.0
 * TestNG 7.9.0
@@ -34,13 +34,13 @@ https://www.coursera.org/
 * Selenium Grid
 * Git & GitHub
 
-### Folder Structure ###
+### Folder Structure 
 This Project uses Page Object Model:
 
 ![Pom screenshot](https://github.com/a-shreya-sood/Identify-Courses/assets/96197352/916a5f03-db54-4614-bddd-4480525b2ceb)
 
-### POM- Page Object Model ###
-#### src/test/java - ###
+### POM- Page Object Model 
+#### src/test/java - 
 *  Page object package - This package contains page elements and methods for all pages in the apllication.
 *  Step definition package - This package contains step definition and hooks file for cucumber.
 *  TestBase package - contains BaseClass file which have setup and tearDown methods.
@@ -53,21 +53,21 @@ This Project uses Page Object Model:
 * extent.Properties - contains  ExtentReport files for cucumber.
 *  log4j2.xml - contains file for generating logs.
 
-#### Features folder - ###
+#### Features folder - 
  contains feature file which have scenarios for cucumber. 
 
-### Reporting : ###
+### Reporting : 
 The framework gives report in three ways:
 * Log - In file automation.log
 * A testng report - Which is generated using extent reports, under the folder reports.
 * A cucumber report - which is generated using extent reports, under the folder CucumberExtentReports.
  
-### Test Cases : ###
+### Test Cases :
 * Tc_001_HolidayHomeTest.java
 * Tc_002_LearningLanguageTest.java
 * Tc_003_EnterpriseTest.java
 
-### How to run the project - ###
+### How to run the project -
 * Through TestNG_- run the file through testng.xml or master.xml(for multiple browser execution ) as TestNG Suite.
 * Through Cucumber - run the file through TestRunner class as JUnit Test.
 * Through Jenkins -
@@ -80,5 +80,5 @@ The framework gives report in three ways:
   and then run the project in command prompt using following commands : mvn test
 
 
-  ### Author ###
+  ### Author
   Shriya Sood Kashyap

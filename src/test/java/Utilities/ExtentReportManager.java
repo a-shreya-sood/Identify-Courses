@@ -32,11 +32,6 @@ public class ExtentReportManager implements ITestListener {
 	public void onStart(ITestContext testContext) {
 		
 		
-		/*SimpleDateFormat df=new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss");//format
-		Date dt=new Date();//create date
-		String currentdatetimestamp=df.format(dt);
-		*/
-		//above 3 lines in one line
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());// time stamp
 		repName = "Test-Report-" + timeStamp + ".html";//report name dynamically generate with timestamp
 		sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);// specify location of the report to maintain history of report generating timestamp and name
@@ -44,6 +39,7 @@ public class ExtentReportManager implements ITestListener {
 		sparkReporter.config().setDocumentTitle("Identify Courses Report"); // Title of report
 		sparkReporter.config().setReportName("Identify Courses Functional Testing"); // name of the report
 		sparkReporter.config().setTheme(Theme.DARK);
+		
 		//common info:-
 		extent = new ExtentReports();
 		extent.attachReporter(sparkReporter);
@@ -54,10 +50,7 @@ public class ExtentReportManager implements ITestListener {
 		extent.setSystemInfo("User Name", System.getProperty("user.name"));
 		extent.setSystemInfo("Environemnt", "QA");
 		extent.setSystemInfo("Operatng System", "Windows");
-		
-		//capture browser passed and Os passed in xml file:-
-//		String os = testContext.getCurrentXmlTest().getParameter("os");
-//		extent.setSystemInfo("Operating System", os);
+
 		
 		String browser = testContext.getCurrentXmlTest().getParameter("browser");
 		extent.setSystemInfo("Browser", browser);
@@ -70,7 +63,7 @@ public class ExtentReportManager implements ITestListener {
 
 	public void onTestSuccess(ITestResult result) {
 	
-		test = extent.createTest(result.getTestClass().getName());//from result getclass get name of class
+		test = extent.createTest(result.getName());//from result getclass get name of class
 		test.assignCategory(result.getMethod().getGroups()); // to display groups in report
 		test.log(Status.PASS,result.getName()+" got successfully executed");
 		
@@ -85,7 +78,7 @@ public class ExtentReportManager implements ITestListener {
 	}
 
 	public void onTestFailure(ITestResult result) {
-		test = extent.createTest(result.getTestClass().getName());
+		test = extent.createTest(result.getName());
 		test.assignCategory(result.getMethod().getGroups());
 		
 		test.log(Status.FAIL,result.getName()+" got failed");
@@ -101,7 +94,7 @@ public class ExtentReportManager implements ITestListener {
 	}
 
 	public void onTestSkipped(ITestResult result) {
-		test = extent.createTest(result.getTestClass().getName());
+		test = extent.createTest(result.getName());
 		test.assignCategory(result.getMethod().getGroups());
 		test.log(Status.SKIP, result.getName()+" got skipped");
 		test.log(Status.INFO, result.getThrowable().getMessage());
@@ -120,26 +113,6 @@ public class ExtentReportManager implements ITestListener {
 			e.printStackTrace();
 		}
 
-		/*sending to team using mail
-		 * try { URL url = new
-		 * URL("file:///"+System.getProperty("user.dir")+"\\reports\\"+repName);
-		 * 
-		 * // Create the email message 
-		 * ImageHtmlEmail email = new ImageHtmlEmail();
-		 * email.setDataSourceResolver(new DataSourceUrlResolver(url));
-		 * email.setHostName("smtp.googlemail.com"); 
-		 * email.setSmtpPort(465);
-		 * email.setAuthenticator(new DefaultAuthenticator("pavanoltraining@gmail.com","password")); 
-		 * email.setSSLOnConnect(true);
-		 * email.setFrom("pavanoltraining@gmail.com"); //Sender
-		 * email.setSubject("Test Results");
-		 * email.setMsg("Please find Attached Report....");
-		 * email.addTo("pavankumar.busyqa@gmail.com"); //Receiver 
-		 * email.attach(url, "extent report", "please check report..."); 
-		 * email.send(); // send the email 
-		 * }
-		 * catch(Exception e) { e.printStackTrace(); }
-		 */
 	}
 
 }

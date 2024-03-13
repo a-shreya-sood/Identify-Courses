@@ -50,7 +50,7 @@ public class LanguageLearningpage extends BasePage
 	@FindBy(xpath="//div[@class=\"css-jyd7rb\"]//button")
 	WebElement close;
 	
-	//xpath for all levels
+	//xpath for all difficultylevels
 	@FindBy(xpath="//div[@data-testid='search-filter-group-Level']//div/span/span[text()]")
 	List<WebElement>levels;
 	
@@ -134,7 +134,7 @@ public class LanguageLearningpage extends BasePage
 		
 		}
 		
-		//for levels
+		//for difficulty levels
 		public void Levels() throws IOException
 		{
 			String data="";

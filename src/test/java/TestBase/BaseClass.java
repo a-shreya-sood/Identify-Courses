@@ -37,13 +37,13 @@ public class BaseClass
 			
 			//loading properties file
 			FileReader file = new FileReader(".//src/test/resources/config.Properties");//class
-			p=new Properties();//creating obj of Properties
-			p.load(file);//load properties file
+			p=new Properties();
+			p.load(file);
 		
 
 			
 			
-			//check on which envt want to run grid or local from config properties file
+			//run project on remote environment
 			if(p.getProperty("execution_env").equalsIgnoreCase("remote"))
 			{
 				DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -74,15 +74,15 @@ public class BaseClass
 					System.out.println("No matching browser..");
 					return;
 				}
-				driver = new RemoteWebDriver(new URL("http://10.66.140.109:4444"),capabilities);//node/grid URL is fixed
+				
+				driver = new RemoteWebDriver(new URL("http://10.66.140.109:4444"),capabilities);
 	 
 			}
 			
+			//run the project on local environment
 			else if(p.getProperty("execution_env").equalsIgnoreCase("local"))
 			{
-				//switch(getProperties().getProperty("browser").toLowerCase){
-				
-				//1.launch based on condition-locally
+			
 				switch(br.toLowerCase())
 				{
 				case "chrome":
@@ -95,7 +95,6 @@ public class BaseClass
 	 
 				}
 			}
-			//2.for grid now add remote envt
 	 
 				driver.manage().deleteAllCookies();
 				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

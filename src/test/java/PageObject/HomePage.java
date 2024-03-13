@@ -20,6 +20,7 @@ public class HomePage extends BasePage
 	List<String> wins;
 	
  Actions act=new Actions(driver);
+ JavascriptExecutor js=(JavascriptExecutor)driver;
  
 	public HomePage(WebDriver driver)
 	{
@@ -37,7 +38,7 @@ public class HomePage extends BasePage
 	@FindBy(xpath="(//div[@class='magnifier-wrapper'])[2]")
 	WebElement searchButton;
 			
-	//xpath to\
+	//xpath of english lang
 	//@FindBy(xpath="(//span[text()='English'])[2]")
 	@FindBy(xpath="(//div[@class='cds-checkboxAndRadio-labelText'])[6]")
 	WebElement lang;
@@ -48,7 +49,8 @@ public class HomePage extends BasePage
 	
 	
 	//xpath of courseHeading of 1st course
-	@FindBy(xpath="(//h3[@class='cds-CommonCard-title css-1sktkql'])[1]")
+	//@FindBy(xpath="(//h3[@class='cds-CommonCard-title css-1sktkql'])[1]")
+	@FindBy(xpath="(//h3[@class='cds-CommonCard-title css-6ecy9b'])[1]")
 	WebElement courseBox1;
 	
 	//xpath of courseHeading
@@ -87,7 +89,6 @@ public class HomePage extends BasePage
 	{
 		textBox.sendKeys("web development");
 		act.sendKeys(Keys.ENTER).perform();
-//		Thread.sleep(2000);
 		
 	}
 	
@@ -97,14 +98,13 @@ public class HomePage extends BasePage
 	{
 		try
 		{
-		JavascriptExecutor js=(JavascriptExecutor)driver;
 	     js.executeScript("arguments[0].scrollIntoView();",lang);
 		js.executeScript("arguments[0].click();",lang);
 		Thread.sleep(3000);
 		}
 		catch(Exception e)
 		{
-			
+			e.getMessage();
 		}
 		
 	}
@@ -112,7 +112,7 @@ public class HomePage extends BasePage
 	//action to select level of course
 	public void course_level()
 	{
-		JavascriptExecutor js=(JavascriptExecutor)driver;
+
 		js.executeScript("arguments[0].scrollIntoView();",courseLevel);
 		js.executeScript("arguments[0].click();",courseLevel);
 	
@@ -122,7 +122,6 @@ public class HomePage extends BasePage
 	public void course_box_first()
 	{
 
-		JavascriptExecutor js=(JavascriptExecutor)driver;
 		js.executeScript("arguments[0].scrollIntoView();",courseBox1);
 		js.executeScript("arguments[0].click();",courseBox1);
 	
@@ -254,8 +253,7 @@ public class HomePage extends BasePage
 	  
   }
 	
-	
-	
+
 
 	
 	
